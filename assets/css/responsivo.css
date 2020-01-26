@@ -13,3 +13,15 @@
     width: 300px;
   }
 }
+@media only screen and (max-width: 400px) {
+  .js #forms .button {
+    display: flex;
+    flex-direction: column;
+  }
+  .js #forms .button .btn-geral {
+    margin: 0;
+  }
+  .js #forms .button .btn-geral:first-child {
+    margin-bottom: 20px;
+  }
+}
