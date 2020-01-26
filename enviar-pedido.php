@@ -8,6 +8,7 @@ $nome_site = 'Minions Store';
 $email_user = $_POST['email'];
 $nome_user = $_POST['nome'];
 
+
 $body_content = '';
 foreach ($_POST as $field => $value) {
   if ($field !== 'leaveblank' && $field !== 'dontchange' && $field !== 'enviar') {
