@@ -1,0 +1,120 @@
+@import 'geral.less';
+@import 'keyframes.less';
+
+[data-menu="button"] {
+  display: none;
+}
+
+@media only screen and (max-width: 979px) {
+  .js {
+    header {
+      .menu {
+        display: flex;
+        justify-content: flex-end;
+
+        [data-menu="button"] {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: none;
+          border: none;
+          padding: .5rem 1rem;
+          text-transform: uppercase;
+          font-family: 'Minions', monospace;
+          font-size: 2em;
+          color: @branco;
+          cursor: pointer;
+          margin: 10px;
+          outline: 0;
+
+          &::before {
+            content: '';
+            display: inline-block;
+            height: 3px;
+            width: 17px;
+            margin-right: 15px;
+            background-color: @branco;
+            box-shadow: 0 8px @branco, 0 -8px @branco;
+            transition: .3s;
+          }
+
+          &:hover {
+            color: @amarelo;
+
+            &::before {
+              background-color: @amarelo;
+              box-shadow: 0 8px @amarelo, 0 -8px @amarelo;
+            }
+          }
+
+          &.active {
+            &::before {
+              transform: rotate(90deg);
+            }
+          }
+        }
+
+        [data-menu='list'] {
+          display: none;
+          position: absolute;
+          background-color: rgba(34, 34, 34, 0.8);
+          width: 255px;
+          z-index: 200;
+          flex-direction: column;
+          top: 91px;
+          right: 0;
+          font-size: 1.4em;
+          align-items: flex-end;
+          box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.9);
+
+          img {
+            display: none;
+          }
+
+          li {
+            width: 100%;
+            text-align: right;
+            border-bottom: 1px solid @preto;
+
+            a {
+              padding: 20px;
+
+              &::after {
+                display: none;
+              }
+            }
+
+            &:hover {
+              background-color: @amarelo-claro;
+
+              a {
+                color: @preto;
+              }
+            }
+
+            &:nth-child(1) {
+              order: 3;
+            }
+
+            &:nth-child(2) {
+              order: 2;
+            }
+
+            &:nth-child(4) {
+              order: 1;
+            }
+
+            &:nth-child(5) {
+              order: 4;
+            }
+          }
+
+          &.active {
+            display: flex;
+            animation: show-down .3s forwards;
+          }
+        }
+      }
+    }
+  }
+}

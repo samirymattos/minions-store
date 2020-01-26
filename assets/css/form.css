@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Minions';
+  src: url('../fonts/THE\ MINION.ttf');
+}
+@font-face {
+  font-family: 'Logo';
+  src: url('../fonts/Lordish.ttf');
+}
+body {
+  position: relative;
+  padding-top: 108px;
+  padding-bottom: 130px;
+  min-height: calc(100vh);
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-geral {
+  text-decoration: none;
+  color: #FEE140;
+  padding: 10px 20px;
+  border: 2px solid #222;
+  background-color: #222;
+  border-radius: 10px;
+  font-size: 1.3em;
+  font-weight: 900;
+  cursor: pointer;
+}
+.btn-geral:hover {
+  background-color: #FFEF4F;
+  color: #222;
+  font-weight: 900;
+}
+#forms {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  flex-direction: column;
+}
+#forms form {
+  background-color: #FEE140;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 500px;
+  min-height: 400px;
+}
+#forms form input,
+#forms form select,
+#forms form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Minions';
+  color: #222;
+  padding: 5px 10px;
+  font-size: 1.5em;
+}
+#forms form input::placeholder,
+#forms form select::placeholder,
+#forms form textarea::placeholder {
+  color: #222;
+}
+#forms form textarea {
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100px;
+}
+#forms form textarea::placeholder {
+  font-family: 'Minions';
+  font-size: 1.5em;
+}
+#forms .button {
+  margin-bottom: 60px;
+  display: none;
+}
+#forms .button .btn-geral:hover {
+  background-color: #fafafa !important;
+}
+#forms .button .btn-geral:first-child {
+  margin-right: 20px;
+}
+.js #forms form {
+  display: none;
+}
+.js #forms form.active {
+  display: flex;
+}
+.js #forms .button {
+  display: block;
+}

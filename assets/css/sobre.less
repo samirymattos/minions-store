@@ -1,0 +1,44 @@
+@import 'geral.less';
+
+#sobre {
+
+  .sobre {
+
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0;
+    align-items: center;
+    justify-content: center;
+
+    .img-minions {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 300px;
+      }
+    }
+
+    .text-sobre {
+      background-color: @amarelo;
+      padding: 20px;
+      border-radius: 15px;
+
+      h1 {
+        font-family: 'Minions';
+        color: @preto;
+        font-size: 2.2em;
+        margin-bottom: 30px;
+      }
+
+      p {
+        color: @preto;
+        font-size: 1.125em;
+        line-height: 1;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    }
+  }
+}

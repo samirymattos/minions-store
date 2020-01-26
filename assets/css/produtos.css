@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Minions';
+  src: url('../fonts/THE\ MINION.ttf');
+}
+@font-face {
+  font-family: 'Logo';
+  src: url('../fonts/Lordish.ttf');
+}
+body {
+  position: relative;
+  padding-top: 108px;
+  padding-bottom: 130px;
+  min-height: calc(100vh);
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-geral {
+  text-decoration: none;
+  color: #FEE140;
+  padding: 10px 20px;
+  border: 2px solid #222;
+  background-color: #222;
+  border-radius: 10px;
+  font-size: 1.3em;
+  font-weight: 900;
+  cursor: pointer;
+}
+.btn-geral:hover {
+  background-color: #FFEF4F;
+  color: #222;
+  font-weight: 900;
+}
+#produtos {
+  background-color: #FEE140;
+}
+#produtos .lista-produtos .produto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 60px 0 40px;
+  height: 500px;
+}
+#produtos .lista-produtos .produto .img-produto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#produtos .lista-produtos .produto .img-produto img {
+  width: 250px;
+  object-fit: cover;
+}
+#produtos .lista-produtos .produto .conteudo h2 {
+  font-family: 'Minions';
+  color: #222;
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
+#produtos .lista-produtos .produto .conteudo p {
+  color: #222;
+  font-size: 1.125em;
+  line-height: 1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#produtos .lista-produtos .produto .conteudo h3 {
+  font-family: 'Minions';
+  color: #222;
+  font-size: 2em;
+  margin-top: 30px;
+}
+#produtos .lista-produtos .produto .conteudo .button {
+  margin-top: 30px;
+}
+#produtos .lista-produtos .produto::nth-child(even) {
+  flex-direction: row-reverse;
+}
+#produtos .lista-produtos [data-slide-nav="principal"] {
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.js #produtos .lista-produtos .produto {
+  display: none;
+}
+.js #produtos .lista-produtos .produto.active {
+  display: flex;
+}

@@ -1,0 +1,83 @@
+@import 'geral.less';
+
+#forms {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  flex-direction: column;
+
+  form {
+    background-color: @amarelo;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 500px;
+    min-height: 400px;
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: none;
+      font-family: 'Minions';
+      color: @preto;
+      padding: 5px 10px;
+      font-size: 1.5em;
+
+      &::placeholder {
+        color: @preto;
+      }
+    }
+
+    textarea {
+      font-size: 1em;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      height: 100px;
+
+      &::placeholder {
+        font-family: 'Minions';
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .button {
+    margin-bottom: 60px;
+    display: none;
+
+    .btn-geral {
+
+      &:hover {
+        background-color: @branco  !important;
+      }
+
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.js {
+  #forms {
+    form {
+      display: none;
+
+      &.active {
+        display: flex;
+      }
+    }
+
+    .button {
+      display: block;
+    }
+  }
+
+}

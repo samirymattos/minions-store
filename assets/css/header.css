@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Minions';
+  src: url('../fonts/THE\ MINION.ttf');
+}
+@font-face {
+  font-family: 'Logo';
+  src: url('../fonts/Lordish.ttf');
+}
+body {
+  position: relative;
+  padding-top: 108px;
+  padding-bottom: 130px;
+  min-height: calc(100vh);
+}
+header {
+  top: 0;
+  padding: 15px 0;
+  background-color: #222;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+header .menu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+header .menu ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #fafafa;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  outline: 0;
+  font-family: 'Minions', monospace;
+}
+header .menu ul li a::after {
+  content: '';
+  height: 4px;
+  width: 0;
+  transition: 0.3s;
+}
+header .menu ul li a:hover {
+  color: #FEE140;
+}
+header .menu ul li a:hover::after {
+  background-color: #FEE140;
+  width: 100%;
+  transition: 0.3s;
+}
+header .menu ul img {
+  width: 200px;
+  margin: 0 20px;
+}

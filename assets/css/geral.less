@@ -1,0 +1,45 @@
+@preto: #222;
+@amarelo: #FEE140;
+@amarelo-claro: #FFEF4F;
+@branco: #fafafa;
+
+@font-face {
+  font-family: 'Minions';
+  src: url('../fonts/THE\ MINION.ttf');
+}
+
+@font-face {
+  font-family: 'Logo';
+  src: url('../fonts/Lordish.ttf');
+}
+
+body {
+  position: relative;
+  padding-top: 108px;
+  padding-bottom: 130px;
+  min-height: calc(100vh);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-geral {
+  text-decoration: none;
+  color: @amarelo;
+  padding: 10px 20px;
+  border: 2px solid @preto;
+  background-color: @preto;
+  border-radius: 10px;
+  font-size: 1.3em;
+  font-weight: 900;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @amarelo-claro;
+    color: @preto;
+    font-weight: 900;
+  }
+}

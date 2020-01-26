@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Minions';
+  src: url('../fonts/THE\ MINION.ttf');
+}
+@font-face {
+  font-family: 'Logo';
+  src: url('../fonts/Lordish.ttf');
+}
+body {
+  position: relative;
+  padding-top: 108px;
+  padding-bottom: 130px;
+  min-height: calc(100vh);
+}
+#sobre .sobre {
+  display: flex;
+  flex-direction: row;
+  padding: 60px 0;
+  align-items: center;
+  justify-content: center;
+}
+#sobre .sobre .img-minions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#sobre .sobre .img-minions img {
+  width: 300px;
+}
+#sobre .sobre .text-sobre {
+  background-color: #FEE140;
+  padding: 20px;
+  border-radius: 15px;
+}
+#sobre .sobre .text-sobre h1 {
+  font-family: 'Minions';
+  color: #222;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+}
+#sobre .sobre .text-sobre p {
+  color: #222;
+  font-size: 1.125em;
+  line-height: 1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
