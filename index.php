@@ -69,7 +69,7 @@
             </p>
             <h3>R$ 35,00</h3>
             <div class="button">
-              <button class="btn-geral btn-produto">Quero o Stuart!!</button>
+              <a href="#forms" class="btn-geral btn-produto">Quero o meu!!</a>
             </div>
           </div>
         </li>
@@ -87,7 +87,7 @@
             </p>
             <h3>R$ 35,00</h3>
             <div class="button">
-              <button class="btn-geral btn-produto">Quero o Bob!!</button>
+              <a href="#forms" class="btn-geral btn-produto">Quero o meu!!</a>
             </div>
           </div>
         </li>
@@ -105,7 +105,7 @@
             </p>
             <h3>R$ 35,00</h3>
             <div class="button">
-              <button class="btn-geral btn-produto">Quero o Kevin!!</button>
+              <a href="#forms" class="btn-geral btn-produto">Quero o meu!!</a>
             </div>
           </div>
         </li>
