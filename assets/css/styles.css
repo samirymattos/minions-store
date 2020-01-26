@@ -1017,6 +1017,9 @@ header .menu ul img {
     height: 950px;
     justify-content: space-between;
   }
+  #produtos .lista-produtos .produto .img-produto {
+    height: 100%;
+  }
   #forms form {
     width: 300px;
   }
