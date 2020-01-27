@@ -118,7 +118,7 @@
       <button id="btn-form-minion" class="btn-geral">Quero Pedir</button>
       <button id="btn-form-contact" class="btn-geral">Fale Conosco</button>
     </div>
-    <form id="form-minion" method="POST" action="./enviar-pedido.php" class="grid-8 container active">
+    <form id="form-minion" method="POST" action="./enviar-pedido.php" class="grid-8 container formphp active">
       <input type="text" id="nome-pedido" name="nome" placeholder="Nome" required />
       <input type="text" id="email-pedido" name="email" placeholder="E-mail" required />
       <select required name="minion">
@@ -128,9 +128,9 @@
         <option value="Kevin">Kevin</option>
       </select>
       <input type="number" id="quant" name="quantidade" placeholder="Quantidade" required />
-      <button type="submit" class="btn btn-geral">Enviar</button>
+      <button id="enviar" name="enviar" type="submit" class="btn btn-geral">Enviar</button>
     </form>
-    <form id="form-contact" class="grid-8 container">
+    <form id="form-contact" class="grid-8 container formphp">
       <input type="text" id="nome" placeholder="Nome" />
       <input type="text" id="email" placeholder="E-mail" />
       <input type="tel" id="tel" placeholder="Telefone" />
@@ -149,6 +149,7 @@
   </footer>
 
   <script src="assets/js/simple-slide.js"></script>
+  <script src="assets/js/simple-form.js"></script>
   <script type="module" src="assets/js/main.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
