@@ -25,7 +25,9 @@ $email->setReplyTo($email_user, $nome_user);
 $email->setSubject('Formulário de Pedido Minions Store');
 $email->addContent('text/plain', $body_content);
 
-$sendgrid = new \SendGrid('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');
+$apiKey = getenv('SENDGRID_API_KEY');
+$sendgrid = new \SendGrid($apiKey);
+
 try {
   $response = $sendgrid->send($email);
   print $response->statusCode() . "\n";
