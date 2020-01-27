@@ -118,7 +118,7 @@
       <button id="btn-form-minion" class="btn-geral">Quero Pedir</button>
       <button id="btn-form-contact" class="btn-geral">Fale Conosco</button>
     </div>
-    <form id="form-minion" method="POST" action="enviar-pedido.php" class="grid-8 container formphp active">
+    <form id="form-minion" method="GET" action="enviar-pedido.php" class="grid-8 container formphp active">
       <input type="text" id="nome-pedido" name="nomePedido" placeholder="Nome" required />
       <input type="text" id="email-pedido" name="emailPedido" placeholder="E-mail" required />
       <select required name="minion">

@@ -5,8 +5,8 @@ require('./sendgrid-php/sendgrid-php.php');
 $email_site = 'samirymattos@gmail.com';
 $nome_site = 'Minions Store';
 
-$email_user = $_REQUEST['emailPedido'];
-$nome_user = $_REQUEST['nomePedido'];
+$email_user = $_GET['emailPedido'];
+$nome_user = $_GET['nomePedido'];
 
 $body_content = '';
 foreach ($_POST as $field => $value) {
