@@ -8,7 +8,7 @@ $nome_site = 'Minions Store';
 $email_user = $_GET['emailPedido'];
 $nome_user = $_GET['nomePedido'];
 
-$body_content = '';
+$body_content = 'Novo e-mail';
 foreach ($_GET as $field => $value) {
   if ($field !== 'leaveblank' && $field !== 'dontchange' && $field !== 'enviar') {
     $sanitize_value = filter_var($value, FILTER_SANITIZE_STRING);
