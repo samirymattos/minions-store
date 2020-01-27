@@ -8,6 +8,7 @@
 }
 body {
   position: relative;
+  padding-top: 108px;
   padding-bottom: 130px;
   min-height: calc(100vh);
 }
@@ -32,12 +33,19 @@ body {
   color: #222;
   font-weight: 900;
 }
+#form-sucesso {
+  color: #31aa39;
+}
+#form-erro {
+  color: #f64540;
+}
 #sobre .sobre {
   display: flex;
   flex-direction: row;
   padding: 60px 0;
   align-items: center;
   justify-content: center;
+  animation: show-left 0.3s forwards;
 }
 #sobre .sobre .img-minions {
   display: flex;
