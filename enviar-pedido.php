@@ -5,8 +5,8 @@ require('./sendgrid-php/sendgrid-php.php');
 $email_site = 'samirymattos@gmail.com';
 $nome_site = 'Minions Store';
 
-$email_user = $_POST['emailPedido'];
-$nome_user = $_POST['nomePedido'];
+$email_user = $_REQUEST['emailPedido'];
+$nome_user = $_REQUEST['nomePedido'];
 
 $body_content = '';
 foreach ($_POST as $field => $value) {
@@ -25,7 +25,7 @@ $email->setReplyTo($email_user, $nome_user);
 $email->setSubject('Formulário de Pedido Minions Store');
 $email->addContent('text/plain', $body_content);
 
-$sendgrid = new \SendGrid('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');
+$sendgrid = new \SendGrid('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');
 try {
   $response = $sendgrid->send($email);
   print $response->statusCode() . "\n";
