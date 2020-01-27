@@ -8,6 +8,8 @@ $nome_site = 'Minions Store';
 $email_user = $_REQUEST['emailPedido'];
 $nome_user = $_REQUEST['nomePedido'];
 
+echo $nome_user;
+
 $body_content = '';
 foreach ($_POST as $field => $value) {
   if ($field !== 'leaveblank' && $field !== 'dontchange' && $field !== 'enviar') {
