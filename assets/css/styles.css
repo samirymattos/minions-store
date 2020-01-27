@@ -665,6 +665,9 @@ body {
 #form-erro {
   color: #f64540;
 }
+* {
+  outline: 0;
+}
 @keyframes show-right {
   from {
     opacity: 0;

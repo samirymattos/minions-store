@@ -39,3 +39,6 @@ body {
 #form-erro {
   color: #f64540;
 }
+* {
+  outline: 0;
+}
