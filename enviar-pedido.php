@@ -9,7 +9,7 @@ $email_user = $_GET['emailPedido'];
 $nome_user = $_GET['nomePedido'];
 
 $body_content = '';
-foreach ($_POST as $field => $value) {
+foreach ($_GET as $field => $value) {
   if ($field !== 'leaveblank' && $field !== 'dontchange' && $field !== 'enviar') {
     $sanitize_value = filter_var($value, FILTER_SANITIZE_STRING);
     $body_content .= $field . ': ' . $value . '\n';
