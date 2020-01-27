@@ -2,7 +2,7 @@
 
 require('./sendgrid-php/sendgrid-php.php');
 
-$email_site = 'samirymattos@gmail.com';
+$email_site = 'joaotosto@startecexp.com';
 $nome_site = 'Minions Store';
 
 $email_user = $_GET['emailPedido'];
