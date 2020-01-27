@@ -1,50 +1,5 @@
 [
     {
-        "name": "shark/simple_html_dom",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/samacs/simple_html_dom.git",
-            "reference": "d0a7686635945ac324d4c54cee6f8aa57d409b97"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/samacs/simple_html_dom/zipball/d0a7686635945ac324d4c54cee6f8aa57d409b97",
-            "reference": "d0a7686635945ac324d4c54cee6f8aa57d409b97",
-            "shasum": ""
-        },
-        "require": {
-            "ext-mbstring": "*",
-            "php": ">=5.2.4"
-        },
-        "time": "2018-11-08T03:30:17+00:00",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "classmap": [
-                "simple_html_dom.php"
-            ],
-            "files": [
-                "simple_html_dom.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "authors": [
-            {
-                "name": "S.C. Chen",
-                "email": "me578022@gmail.com",
-                "homepage": "http://simplehtmldom.sourceforge.net/"
-            }
-        ],
-        "description": "Simple HTML DOM package.",
-        "homepage": "http://simplehtmldom.sourceforge.net/",
-        "keywords": [
-            "dom",
-            "php dom"
-        ]
-    },
-    {
         "name": "slim/slim",
         "version": "2.4.3",
         "version_normalized": "2.4.3.0",
