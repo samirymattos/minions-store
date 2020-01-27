@@ -46,3 +46,7 @@ new SimpleForm({
   sucesso:
     "<div id='form-suceeso'><h2>Formulário enviado com sucesso</h2><p>Em breve entraremos em contato</p></div>"
 });
+
+// Anime
+
+new SimpleAnime();

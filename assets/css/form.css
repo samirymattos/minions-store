@@ -33,6 +33,12 @@ body {
   color: #222;
   font-weight: 900;
 }
+#form-sucesso {
+  color: #31aa39;
+}
+#form-erro {
+  color: #f64540;
+}
 #forms {
   padding: 60px 0;
   display: flex;
@@ -40,6 +46,7 @@ body {
   justify-content: center;
   height: 700px;
   flex-direction: column;
+  animation: show-left 0.6s forwards;
 }
 #forms form {
   background-color: #FEE140;
