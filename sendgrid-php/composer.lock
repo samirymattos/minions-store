@@ -179,7 +179,6 @@
                 "shasum": ""
             },
             "require": {
-                "ext-mbstring": "*",
                 "ext-dom": "*",
                 "ext-phar": "*",
                 "phar-io/version": "^1.0.1",
@@ -1689,10 +1688,5 @@
         "ext-openssl": "*"
     },
     "platform-dev": []
-    "require": {
-        "ext-mbstring": "*",
-        "slim/slim": "2.4.3",
-        "shark/simple_html_dom": "dev-master"
-    }
 }
 
