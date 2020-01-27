@@ -119,8 +119,8 @@
       <button id="btn-form-contact" class="btn-geral">Fale Conosco</button>
     </div>
     <form id="form-minion" method="POST" action="./enviar-pedido.php" class="grid-8 container formphp active">
-      <input type="text" id="nome-pedido" name="nome" placeholder="Nome" required />
-      <input type="text" id="email-pedido" name="email" placeholder="E-mail" required />
+      <input type="text" id="nome-pedido" name="nomePedido" placeholder="Nome" required />
+      <input type="text" id="email-pedido" name="emailPedido" placeholder="E-mail" required />
       <select required name="minion">
         <option disabled selected value>O Minion</option>
         <option value="Stuart">Stuart</option>
@@ -128,7 +128,7 @@
         <option value="Kevin">Kevin</option>
       </select>
       <input type="number" id="quant" name="quantidade" placeholder="Quantidade" required />
-      <button id="enviar" name="enviar" type="submit" class="btn btn-geral">Enviar</button>
+      <input id="enviar" name="enviar" type="submit" class="btn btn-geral">Enviar</input>
     </form>
     <form id="form-contact" class="grid-8 container formphp">
       <input type="text" id="nome" placeholder="Nome" />
