@@ -179,6 +179,7 @@
                 "shasum": ""
             },
             "require": {
+                 "ext-mbstring": "*",
                 "ext-dom": "*",
                 "ext-phar": "*",
                 "phar-io/version": "^1.0.1",
